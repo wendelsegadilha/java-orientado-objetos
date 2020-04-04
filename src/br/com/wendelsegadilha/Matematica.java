@@ -1,7 +1,5 @@
 package br.com.wendelsegadilha;
 
-import java.util.Arrays;
-
 public class Matematica {
 
 	/**
