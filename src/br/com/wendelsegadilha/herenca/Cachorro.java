@@ -8,4 +8,9 @@ public class Cachorro extends Animal{
 		super("carne", 19);
 		this.nome = nome;
 	}
+	
+	@Override
+	public void fazerBarulho() {
+		System.out.println("Au, Au !");
+	}
 }

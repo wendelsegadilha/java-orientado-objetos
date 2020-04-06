@@ -4,16 +4,28 @@ public class AnimalTeste {
 
 	public static void main(String[] args) {
 		
-		Cachorro toto = new Cachorro("Toto");
-		
+		Cachorro toto = new Cachorro("Totó");
 		Galinha carijo = new Galinha();
-		carijo.comida = "milho";
 		
-		System.out.println(toto.equals(carijo));
+		//barulho(toto);
+		//barulho(carijo);
 		
-		System.out.println(toto.hashCode());
+		barulhoSemPolimorfismo("Cachorro");
+		barulhoSemPolimorfismo("Galinha");
+	}
+	
+	//recebe um animal generico
+	public static void barulho(Animal animal) {
+		animal.fazerBarulho();
+	}
+	
+	public static void barulhoSemPolimorfismo(String animal) {
 		
-		System.out.println(toto.getClass());
+		if(animal.equals("Cachorro")) {
+			System.out.println("Au, Au !");
+		}else if(animal.equals("Galinha")) {
+			System.out.println("Có, Có !");
+		}
 		
 	}
 
