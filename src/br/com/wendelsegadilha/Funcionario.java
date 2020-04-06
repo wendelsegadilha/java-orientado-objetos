@@ -4,6 +4,7 @@ public class Funcionario {
 	
 	private String nome;
 	private boolean ativo;
+	public static boolean pago;
 	
 	public String getNome() {
 		return nome;
