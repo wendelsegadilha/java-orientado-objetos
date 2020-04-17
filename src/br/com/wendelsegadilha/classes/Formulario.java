@@ -1,4 +1,4 @@
-package br.com.wendelsegadilha;
+package br.com.wendelsegadilha.classes;
 
 public class Formulario {
 
